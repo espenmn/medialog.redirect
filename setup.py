@@ -16,7 +16,7 @@ long_description = (
 
 setup(name='medialog.redirect',
       version=version,
-      description="Adds a viewlet to display a slider",
+      description="A redirecting browser view",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
@@ -37,7 +37,7 @@ setup(name='medialog.redirect',
         "Topic :: Internet",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='responsive slider plone diazo',
+      keywords='redirect plone diazo',
       author='Espen Moe-Nilssen',
       author_email='espen at medialog no',
       url='http://github.com/espenmn/medialog.redirect',
@@ -47,10 +47,8 @@ setup(name='medialog.redirect',
       namespace_packages=['medialog'],
       include_package_data=True,
       zip_safe=False,
-      install_requires=['setuptools',
-      					'plone.app.vocabularies',
-      					'plone.api',
-                        ],
+      install_requires=['plone.api',
+      				],
       entry_points="""
       # -*- entry_points -*-
       [z3c.autoinclude.plugin]

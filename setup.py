@@ -8,13 +8,11 @@ from setuptools import setup, find_packages
 
 version = '0.1'
 
-long_description = (
-    read('README.txt'))
 
 setup(name='medialog.redirect',
       version=version,
       description="A redirecting browser view",
-      long_description=long_description,
+      long_description='A view that takes two variables, index and index_value and redirects to the first content item that is found',
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
@@ -45,7 +43,7 @@ setup(name='medialog.redirect',
       include_package_data=True,
       zip_safe=False,
       install_requires=['plone.api',
-      				'setuptools,
+      				'setuptools',
       				],
       entry_points="""
       # -*- entry_points -*-

@@ -6,9 +6,6 @@ import os
 from setuptools import setup, find_packages
 
 
-def read(*rnames):
-    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
-
 version = '0.1'
 
 long_description = (
@@ -48,6 +45,7 @@ setup(name='medialog.redirect',
       include_package_data=True,
       zip_safe=False,
       install_requires=['plone.api',
+      				'setuptools,
       				],
       entry_points="""
       # -*- entry_points -*-

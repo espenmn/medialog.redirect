@@ -6,10 +6,10 @@ from Products.Five import BrowserView
 
 class RedirectView(BrowserView):
      
-    def call(self, index='', value=''):
+    def call(self):
     	"""redirect to indexed content"""
     	    	
     	catalog = api.portal.get_tool(name='portal_catalog')
-    	content_items = catalog(portal_type=value)
+    	content_items = catalog(portal_type=index_value)
     	return content_items[0]
     

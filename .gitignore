@@ -2,3 +2,5 @@
 *.pyc
 
 src/medialog.redirect.egg-info
+
+*.gz

@@ -2,6 +2,11 @@ Changelog
 =========
 
  
+0.2  
+-------------------
+- Fixed unicode error, thank you Matthew Wilkes 
+
+ 
 0.1dev  
 -------------------
 - basics 

@@ -21,5 +21,6 @@ class RedirectView(BrowserView):
             return self.context.REQUEST.RESPONSE.redirect(content_url)
         
         #nothing, or too much found... search for it
+        #must fix unicode error here, too
         search_url = '/@@search?' +index + '=' + index_value.decode('latin-1')
         return self.context.REQUEST.RESPONSE.redirect(search_url)
